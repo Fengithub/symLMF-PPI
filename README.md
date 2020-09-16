@@ -8,11 +8,11 @@ Fen Pei1, Qingya Shi1, 2, Haotian Zhang1, Ivet Bahar1
 
 This project uses the following dependencies:
 
-Python 3.7.7
-Numpy 1.19.1
-Scikit-learn 0.23.1
-Tensorflow 2.2.0
-keras 2.4.3
+Python 3.7.7  
+Numpy 1.19.1  
+Scikit-learn 0.23.1  
+Tensorflow 2.2.0  
+keras 2.4.3  
 
 ============================================
 
