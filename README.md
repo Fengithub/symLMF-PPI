@@ -5,7 +5,8 @@ Fen Pei1,2, Qingya Shi1, 3, Haotian Zhang1, Ivet Bahar1
 2. Drug Discovery Institute University of Pittsburgh, PA, 15213, USA
 3. School of Medicine, Tsinghua University, Beijing, 100084, China  
 
-This work is submitted to the Journal of Chemical Information and Modeling
+This work is submitted to the Journal of Chemical Information and Modeling  
+
 ============================================
 
 This project uses the following dependencies:
