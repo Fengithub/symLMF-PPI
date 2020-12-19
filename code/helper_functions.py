@@ -280,7 +280,7 @@ def get_top_predictions(top_n, n_folds, X_data, y_val, folder):
 
     hide_training_data(prediction_matrix, X_data, y_val)
     # get top 1000 predictions
-    top_predicted_pairs_tot = get_top_pred_tot(prediction_matrix, 1000)
+    top_predicted_pairs_tot = get_top_pred_tot(prediction_matrix, 1000, 0.7)
     top_predicted_pairs_tot = np.array(top_predicted_pairs_tot)
     df_tot = pd.DataFrame(top_predicted_pairs_tot, columns=['Protein_A', 'Protein_B', 'Predicted_Score'])
     df_tot = df_tot.astype({'Protein_A': int, 'Protein_B': int})
