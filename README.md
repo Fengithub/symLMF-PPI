@@ -48,3 +48,8 @@ hide_run.py: demo of train a model with hidding part of the input data
 
 train_model.py: demo of how to train the final model  
 
+=============================================  
+
+Top_predictions
+
+Top 1000 prediction results for symLMF and SPRINT, as described in the manuscript
