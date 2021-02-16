@@ -3,6 +3,9 @@ import pandas as pd
 import random
 from sklearn.model_selection import ParameterSampler
 from sklearn.metrics import roc_auc_score
+from sklearn.metrics import precision_recall_curve
+from sklearn.metrics import auc
+
 import os
 from sklearn.model_selection import StratifiedKFold
 from mf_models import *
@@ -63,8 +66,11 @@ def cv_scan(m, X_train, y_train, X_test, y_test, param_list, model_type, fold_id
 
         model, _, _ = mf_model.train_model(m, X_train, y_train, X_test, y_test)
         test_pred = mf_model.get_test_prediction(model, X_test)
-        auc = roc_auc_score(y_test, test_pred)
-        outline = [param['k'], param['l_p'], param['batch_size'], param['epochs'], param['c'], round(auc, 4)]
+        aucScore = roc_auc_score(y_test, test_pred)
+        # aupr calculation
+        precision, recall, thresholds = precision_recall_curve(y_test, test_pred)
+        aupr = auc(recall, precision)
+        outline = [param['k'], param['l_p'], param['batch_size'], param['epochs'], param['c'], round(aucScore, 4), round(aupr, 4)]
         out.write('\t'.join([str(x) for x in outline]) + '\n')
         predict_file = folder + str(param['k']) + '_' + str(param['l_p']) + '_' + str(param['c']) + '_' + str(fold_idx) + '_test_prediction.txt'
         save_pred_file(X_test, y_test, test_pred, predict_file)
