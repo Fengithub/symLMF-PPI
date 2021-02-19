@@ -24,7 +24,7 @@ def parse_data(data_file, fasta_file, pos_file, neg_file):
     neg_df.to_csv(neg_file, index = False, sep = '\t')
 
 def get_sequences(dataset, org):
-    folder = '../../datasets/' 
+    folder = '../datasets/' 
     data_file = folder + dataset + '/PPI_' + org + '_2019.txt'
     fasta_file = folder + dataset + '/unip2fasta_' + org + '.txt'
 
