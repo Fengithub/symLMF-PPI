@@ -217,9 +217,9 @@ def dbn_cv_scan(data_df, folder, batch_size, epochs, fold_idx, predict_file):
         df_predict.to_csv(predict_file, header = True, index = False, sep = '\t')
 
 def run_dbn(dataset, org):
-    data_file = '../../datasets/' + dataset + '/PPI_' + org + '_2019.txt' 
-    fasta_file = '../../datasets/' + dataset + '/unip2fasta_' + org + '.txt'
-    folder = '../../datasets/' + dataset + '/dbn_' + org + '_results/'
+    data_file = '../datasets/' + dataset + '/PPI_' + org + '_2019.txt' 
+    fasta_file = '../datasets/' + dataset + '/unip2fasta_' + org + '.txt'
+    folder = '../datasets/' + dataset + '/dbn_' + org + '_results/'
     if not os.path.exists(folder):
         os.makedirs(folder)
 
