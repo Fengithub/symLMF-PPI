@@ -171,12 +171,12 @@ def cnn_cv_scan(fold_idx, pos_pa_file, pos_pb_file, neg_pa_file, neg_pb_file, da
     df_predict.to_csv(predict_file, header = True, index = False, sep = '\t')
 
 def run_cnn(dataset, org):
-    data_file = '../../datasets/' + dataset + '/PPI_' + org + '_2019.txt' 
-    pos_pa_file = '../../datasets/' + dataset + '/' + org + '_positive_pa.txt'
-    pos_pb_file = '../../datasets/' + dataset + '/' + org + '_positive_pb.txt'
-    neg_pa_file = '../../datasets/' + dataset + '/' + org + '_negative_pa.txt'
-    neg_pb_file = '../../datasets/' + dataset + '/' + org + '_negative_pb.txt'
-    folder = '../../datasets/' + dataset + '/cnn_' + org + '_results/'
+    data_file = '../datasets/' + dataset + '/PPI_' + org + '_2019.txt' 
+    pos_pa_file = '../datasets/' + dataset + '/' + org + '_positive_pa.txt'
+    pos_pb_file = '../datasets/' + dataset + '/' + org + '_positive_pb.txt'
+    neg_pa_file = '../datasets/' + dataset + '/' + org + '_negative_pa.txt'
+    neg_pb_file = '../datasets/' + dataset + '/' + org + '_negative_pb.txt'
+    folder = '../datasets/' + dataset + '/cnn_' + org + '_results/'
     if not os.path.exists(folder):
         os.makedirs(folder)
 
