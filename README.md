@@ -52,4 +52,15 @@ train_model.py: demo of how to train the final model
 
 Top_predictions
 
-Top 1000 prediction results for symLMF and SPRINT, as described in the manuscript
+Top 1000 prediction results for symLMF and SPRINT, as described in the manuscript  
+
+=============================================  
+CNN/
+Code used to perform Res2vec-CNN method for performance comparison 
+
+Reference: Yao, Y.; Du, X.; Diao, Y.; Zhu, H., An integration of deep learning with feature embedding
+for protein-protein interaction prediction. PeerJ 2019, 7, e7126.
+
+code modified based on the originial code available on Github: https://github.com/xal2019/DeepFE-PPI
+
+
