@@ -55,7 +55,7 @@ Top_predictions
 Top 1000 prediction results for symLMF and SPRINT, as described in the manuscript  
 
 =============================================  
-CNN/
+CNN/  
 Code used to perform Res2vec-CNN method for performance comparison 
 
 Reference: Yao, Y.; Du, X.; Diao, Y.; Zhu, H., An integration of deep learning with feature embedding
