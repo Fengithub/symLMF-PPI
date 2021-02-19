@@ -38,7 +38,7 @@ Code
 
 mf_models.py: code for symmetric logistic matrix factorization (symLMF),  symmetric probabilistic matrix factorization (symPMF) and symmetric nonnegative matrix factorization (symNMF) models.  
 
-nmtf.py: code for nonnegative matrix tri-factorization model  
+nmtf.py: code for nonnegative matrix tri-factorization model  (Reference: Wang, H.; Huang, H.; Ding, C.; Nie, F., Predicting protein-protein interactions from multimodal biological data sources via nonnegative matrix tri-factorization. J Comput Biol 2013, 20, 344-58.)  
 
 helper_functions.py: functions helps to process data, train model and evaluate performance  
 
