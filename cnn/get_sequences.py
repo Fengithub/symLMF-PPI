@@ -1,11 +1,3 @@
-"""
-Reference: 
-Wang, Y.; You, Z.-H.; Yang, S.; Li, X.; Jiang, T.-H.; Zhou, X., A High Efficient Biological Language Model 
-for Predicting Protein⁻Protein Interactions. Cells 2019, 8, 122.
-
-code modified based on the originial code available at: https://figshare.com/s/b35a2d3bf442a6f15b6e
-"""
-
 import pandas as pd 
 import numpy as np 
 
@@ -24,7 +16,7 @@ def parse_data(data_file, fasta_file, pos_file, neg_file):
     neg_df.to_csv(neg_file, index = False, sep = '\t')
 
 def get_sequences(dataset, org):
-    folder = '../../datasets/' 
+    folder = '../datasets/' 
     data_file = folder + dataset + '/PPI_' + org + '_2019.txt'
     fasta_file = folder + dataset + '/unip2fasta_' + org + '.txt'
 
