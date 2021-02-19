@@ -1,8 +1,9 @@
 """
-Reference:Yao, Y.; Du, X.; Diao, Y.; Zhu, H., An integration of deep learning with feature embedding 
-for protein-protein interaction prediction. PeerJ 2019, 7, e7126.
+Reference: 
+Wang, Y.; You, Z.-H.; Yang, S.; Li, X.; Jiang, T.-H.; Zhou, X., A High Efficient Biological Language Model 
+for Predicting Protein⁻Protein Interactions. Cells 2019, 8, 122.
 
-code modified based on the originial code available on Github: https://github.com/xal2019/DeepFE-PPI
+code modified based on the originial code available at: https://figshare.com/s/b35a2d3bf442a6f15b6e
 """
 
 import sentencepiece as spm
